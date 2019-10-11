@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>deleteServlet</servlet-name>
+        <servlet-class>p1.deleteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addServlet</servlet-name>
+        <servlet-class>p1.addServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>editServlet</servlet-name>
+        <servlet-class>p1.editServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteServlet</servlet-name>
+        <url-pattern>/deleteServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addServlet</servlet-name>
+        <url-pattern>/addServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>editServlet</servlet-name>
+        <url-pattern>/editServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <welcome-file-list>
+    	<welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
